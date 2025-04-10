@@ -174,6 +174,8 @@ This reimplementation of SongMASS achieves moderate performance on the lyric-to-
 
 These results show that while the model captures the overall pitch and rhythmic patterns seen in human-composed music, there remains room for improvement in reproducing the fine-grained details of the melody. Qualitative listening tests further suggest that the generated melodies maintain harmonic consistency and proper alignment with input lyrics, though some nuances are lost.
 
+You can find the results in `Code scripts on Colab.pdf` file.
+
 ## Detailed Results
 The experiments on a held-out test set produced the following metrics for lyric-to-melody generation:
 
