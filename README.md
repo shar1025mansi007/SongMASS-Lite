@@ -46,6 +46,18 @@ Data is generated and organized according to the original SongMASS data generati
 - `generate_data.sh`: Copies dictionary files and prepares lyric and melody files.
 - `generate_lmd_dataset.py`: A Python script for processing raw LMD MIDI files into aligned lyric–melody pairs following SongMASS's alignment methods.
 
+LMD dataset is obtained from here. Below is the provided script to parse LMD data in the project experiments.
+
+```bash
+git clone https://github.com/yy1lab/Lyrics-Conditioned-Neural-Melody-Generation
+DATADIR=Lyrics-Conditioned-Neural-Melody-Generation/lmd-full_MIDI_dataset/Sentence_and_Word_Parsing
+OUTPUTDIR=data_org
+
+python data/generate_lmd_dataset.py --lmd-data-dir $DATADIR --output-dir $OUTPUTDIR
+bash generate_data.sh $OUTPUTDIR
+```
+Based on the above scripts, data samples will be generated under the data_org directory. 
+
 ### The output directories include:
 
 - `data_org/mono`: Contains monolingual lyric and melody files.
